@@ -1,7 +1,7 @@
 var userrr = 'arturchik';
 // If absolute URL from the remote server is provided, configure the CORS
 // header on that server.
-var url = 'http://www.africau.edu/images/default/sample.pdf';
+var url = 'https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf';
 
 var pdfjsLib = window['pdfjs-dist/build/pdf'];
 

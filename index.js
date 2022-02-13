@@ -1,7 +1,7 @@
 var userrr = 'arturchik';
 // If absolute URL from the remote server is provided, configure the CORS
 // header on that server.
-var url = 'https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf';
+var url = 'https://raw.githubusercontent.com/mozilla/pdf.js/ba2edeae/examples/learning/helloworld.pdf';
 
 var pdfjsLib = window['pdfjs-dist/build/pdf'];
 

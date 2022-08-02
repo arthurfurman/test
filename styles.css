@@ -1,0 +1,47 @@
+/* @media (prefers-color-scheme: light) {
+    body {
+        background-color: yellow;
+        color: black;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: lightgray;
+        color: black;
+    }
+} */
+
+/* :root {
+    --main-bg-color: pink;
+} */
+body {
+    background-color: rgb(195, 191, 195);
+}
+
+h1 {
+    text-align: center;
+}
+
+h1.a.b.c:hover {
+    text-align: right;
+}
+
+h1:hover {
+    background-color: yellow;
+}
+
+p {
+    font-family: verdana;
+    font-size: 20px;
+}
+
+p:hover {
+    background-color: green;
+}
+
+p:not(.a):hover {
+    background-color: red; 
+    visibility: visible;
+    
+}

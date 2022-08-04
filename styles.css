@@ -60,6 +60,11 @@ p:not(.a):hover {
 .dropdown1 {
     position: relative;
     display: inline-block;
+    background-color: #04AA6D;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
 }
 
 /* Dropdown Button */
@@ -188,3 +193,28 @@ p:not(.a):hover {
 
 /* Change the background color of the dropdown button when the dropdown content is shown */
 .dropdown3:hover .dropbtn3:not(:last-child) {background-color: #3e8e41;}
+
+/* DROP DOWN 4 */
+
+/* Dropdown Button */
+.dropbtn4 {
+    background-color: #04AA6D;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown-menu:hover {display: block;}
+
+.dropbtn4:hover{color:red ;}

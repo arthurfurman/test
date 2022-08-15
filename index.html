@@ -23,6 +23,14 @@
                 }
             }
             var userrr = "Arthurbbbb";
+            // console.log(`is there iFrame on page: ${document.getElementById('walkme-master-extension-proxy-iframe')}`);
+            // setTimeout(()=>console.log(`is there iFrame on page after 1 ms: ${document.getElementById('walkme-master-extension-proxy-iframe')}`),1);
+            // setTimeout(()=>console.log(`is there iFrame on page after 10 ms: ${document.getElementById('walkme-master-extension-proxy-iframe')}`),10);
+            // setTimeout(()=>console.log(`is there iFrame on page after 100 ms: ${document.getElementById('walkme-master-extension-proxy-iframe')}`),100);
+            // setTimeout(()=>console.log(`is there iFrame on page after 500 ms: ${document.getElementById('walkme-master-extension-proxy-iframe')}`),500);
+            // setTimeout(()=>console.log(`is there iFrame on page after 1000 ms: ${document.getElementById('walkme-master-extension-proxy-iframe')}`),1000);
+            // setTimeout(()=>console.log(`is there iFrame on page after 2000 ms: ${document.getElementById('walkme-master-extension-proxy-iframe')}`),2000);
+            // setTimeout(()=>console.log(`is there iFrame on page after 5000 ms: ${document.getElementById('walkme-master-extension-proxy-iframe')}`),5000);
             // var MEIsStronger = true;
             //var doNotLoadWalkMe = true;
         </script>
@@ -76,59 +84,142 @@
         <h1 id="myTitle" class="a b c">Arthur's test site</h1>
         <!-- <button onclick="function(){alert('hi')}"">Change Theme</button><br><br> -->
 
-        <div id="one" class="container">
-            <button class="dropbtn4">container</button>
-            <ul class="dropdown-menu">
-                <li>hi 1</li>
-                <li>hi 2</li>
-                <li>hi 3</li>
-                <li>hi 4</li>
-                <li>hi 5</li>
-            </ul>
-        </div> 
-        <!-- <ul>
-        <li class="dropdown1"> hi hi hi
-            <a href="#">Link 1</a>
-            <a href="#">Link 2</a>
-            <a href="#">Link 3</a>
-            <div class="error">
-                you should not see this !!!!
-            </div>
-        </li>
-        <ul> -->
+        
+        <h2>A. li with links, Wrapped by div (hover on .dropdown1-3)</h2>
+        <div class="menu-container">
 
-        <!-- <div class="dropdown2">
-            <button class="dropbtn2">:not prefix</button>
-            <li class="dropdown-content2">
-              <a href="#">Link 1</a>
-              <a href="#">Link 2</a>
-              <a href="#">Link 3</a>
-              <div class="error">
-                you should not see this !!!!
+            <div class="dropdown1">
+                <button class="dropbtn1">1. :not suffix</button>
+                <li class="dropdown-content1">
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Link 3</a>
+                    <div class="error">
+                        you should not see this !!!!
+                    </div>
+                </li>
             </div>
-        </li>
+            
+            <div class="dropdown2">
+                <button class="dropbtn2">2. :not prefix</button>
+                <li class="dropdown-content2">
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Link 3</a>
+                    <div class="error">
+                        you should not see this !!!!
+                    </div>
+                </li>
+            </div>
+            
+            <div class="dropdown3">
+                <button class="dropbtn3">3. :not with nested pseudo class</button>
+                <li class="dropdown-content3">
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Link 3</a>
+                    <div class="error">
+                        you should not see this !!!!
+                    </div>
+                </li>
+            </div>
+
+        </div>
+        
+        
+        <h2>B. ul with lis - without wrapping div (hover on .dropdownbtn4-6).</br>
+            This should not even work without the fix (because the visibility fallback is set to the children and here its the button's brother)
+        </h2>
+        
+        <div class="menu-container">
+            
+            <div class="dropdown-style">
+                <button class="dropbtn4">4. :not prefix</button>
+                <ul class="dropdown-content4">
+                    <li>hi 1</li>
+                    <li>hi 2</li>
+                    <li>hi 3</li>
+                    <div class="error">
+                        you should not see this !!!!
+                    </div>
+                </ul>
+            </div>
+
+            <div class="dropdown-style">
+                <button class="dropbtn5">5. :not suffix</button>
+                <ul class="dropdown-content5">
+                    <li>hi 1</li>
+                    <li>hi 2</li>
+                    <li>hi 3</li>
+                    <div class="error">
+                        you should not see this !!!!
+                    </div>
+                </ul>
+            </div>
+
+            <div class="dropdown-style">
+                <button class="dropbtn6">6. :not with nested pseudo class</button>
+                <ul class="dropdown-content6">
+                    <li>hi 1</li>
+                    <li>hi 2</li>
+                    <li>hi 3</li>
+                    <div class="error">
+                        you should not see this !!!!
+                    </div>
+                </ul>
+            </div>
+
         </div>
 
-        <div class="dropdown3">
-            <button class="dropbtn3">:not with nested pseudo class</button>
-            <li class="dropdown-content3">
-              <a href="#">Link 1</a>
-              <a href="#">Link 2</a>
-              <a href="#">Link 3</a>
-              <div class="error">
-                you should not see this !!!!
+        <h2>C. ul with lis - with wrapping div (hover on .dropdown7-9)</h2>
+        <div class="menu-container">
+
+            <div class="dropdown7">
+                <button class="dropbtn7">7. :not prefix</button>
+                <ul class="dropdown-content7">
+                    <li>hi 1</li>
+                    <li>hi 2</li>
+                    <li>hi 3</li>
+                    <div class="error">
+                        you should not see this !!!!
+                    </div>
+                </ul>
             </div>
-            </li>
-        </div> -->
-        
+
+            <div class="dropdown8">
+                <button class="dropbtn8">8. :not suffix</button>
+                <ul class="dropdown-content8">
+                    <li>hi 1</li>
+                    <li>hi 2</li>
+                    <li>hi 3</li>
+                    <div class="error">
+                        you should not see this !!!!
+                    </div>
+                </ul>
+            </div>
+
+            <div class="dropdown9">
+                <button class="dropbtn9">9. :not with nested pseudo class</button>
+                <ul class="dropdown-content9">
+                    <li>hi 1</li>
+                    <li>hi 2</li>
+                    <li>hi 3</li>
+                    <div class="error">
+                        you should not see this !!!!
+                    </div>
+                </ul>
+            </div>
+
+        </div>
+
         <!-- <input type="checkbox" name="newsletter" value="Daily"> -->
         <!-- <p class="a">hi (also has class a):</p>
-        <p id="hi">17t6fffff22</p>
-        <p>bye:</p>
-        <p id="bye">17/06/22</p>
-        <p>hi-again:</p>
-        <p id="hi-again">11/2/2021 8:24 AM</p>
-        <p>bye-again:</p>
+            <p id="hi">17t6fffff22</p>
+            <p>bye:</p>
+            <p id="bye">17/06/22</p>
+            <p>hi-again:</p>
+            <p id="hi-again">11/2/2021 8:24 AM</p>
+            <p>bye-again:</p>
         <p id="bye-again">11/3/2021</p>
         <p>number1:</p>
         <p id="number1">1</p>
@@ -140,20 +231,22 @@
         <p id="number4">12.3B</p>
         <p>number5:</p>
         <p id="number5">111,222</p> -->
-
-        <!-- <textarea id="eq" name="eq" rows="1" cols="50"></textarea>
-        <button onclick='calc()'>Calculate</button><br><br>
-
-        <a href="https://trxfslive.blob.core.windows.net/social-media/Traxxall_MMS_User_Guide_v0.5.0_v2.pdf" download="proposed_file_name">Download PDF</a>
-
-        <h1>parser</h1>
-		Expression<input id='expression'>
-		Result<input id='result'>
-		<button onclick="parse()">PARSE</button> -->
         
-    </body>
-
-    <!-- <div>
-        <iframe src="https://www.wikipedia.org/" height="400" width="600" title="Iframe Example"></iframe>
-    </div> -->
-</html>
+        <!-- <textarea id="eq" name="eq" rows="1" cols="50"></textarea>
+            <button onclick='calc()'>Calculate</button><br><br>
+            
+            <a href="https://trxfslive.blob.core.windows.net/social-media/Traxxall_MMS_User_Guide_v0.5.0_v2.pdf" download="proposed_file_name">Download PDF</a>
+            
+            <h1>parser</h1>
+            Expression<input id='expression'>
+            Result<input id='result'>
+            <button onclick="parse()">PARSE</button> -->
+            <div>
+                <!-- <iframe src="https://www.wikipedia.org/" height="400" width="600" title="Iframe Example"></iframe> -->
+                <!-- <iframe src="https://www.wikipedia.org/" height="400" width="600" title="Iframe Example"></iframe>
+                <iframe src="https://www.wikipedia.org/" height="400" width="600" title="Iframe Example"></iframe> -->
+            </div>
+            
+        </body>
+        
+        </html>

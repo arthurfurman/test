@@ -127,18 +127,10 @@
         </div>
         <script>
             document.addEventListener('click', function(event) {
-                console.log('Clicked element:', event.target);
                 document.requestStorageAccessFor('https://test.arthurfurman.com').then(function() {
-                    console.log('granted');
+                    console.log('Access granted');
                 });
             });
-
-            var event = new MouseEvent('click', {
-            view: window,
-            bubbles: true,
-            cancelable: true
-            });
-            setTimeout(() =>  document.body.dispatchEvent(event), 1000);
             
         </script>
         <!-- <button onclick="function(){alert('hi')}"">Change Theme</button><br><br> -->
